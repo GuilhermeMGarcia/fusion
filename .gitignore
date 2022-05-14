@@ -1,0 +1,7 @@
+*.*/
+__pycash__/
+*.pyc
+.idea/
+*.sqlite3
+.env
+template/*
