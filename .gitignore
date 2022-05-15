@@ -5,3 +5,4 @@ __pycash__/
 *.sqlite3
 .env
 template/*
+htmlcove/*

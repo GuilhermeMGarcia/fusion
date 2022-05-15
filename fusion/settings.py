@@ -79,18 +79,18 @@ WSGI_APPLICATION = 'fusion.wsgi.application'
 
 # Database
 # https://docs.djangoproject.com/en/4.0/ref/settings/#databases
-
-"""DATABASES = {
+"""
+DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql',
-        'NAME': 'fusion',
-        'USER': 'll_admin',
-        'PASSWORD': 'Garcia2015',
-        'HOST': '127.0.0.1',
-        'PORT': '5432',
+        'NAME': 'BD',
+        'USER': 'User',
+        'PASSWORD': 'Password',
+        'HOST': 'host',
+        'PORT': 'port',
     }
-}"""
-
+}
+"""
 
 # Password validation
 # https://docs.djangoproject.com/en/4.0/ref/settings/#auth-password-validators
@@ -138,7 +138,7 @@ MEDIA_URL = 'media/'
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
 # Test de email
-#EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'
+EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'
 
 """
 EMAIL_HOST = 'localhost'

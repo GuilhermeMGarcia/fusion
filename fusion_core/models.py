@@ -30,7 +30,7 @@ class Trab(Base):
 
     trab = models.CharField('Trabs', max_length=100)
     descricao = models.TextField('Descriçao', max_length=200)
-    icone = models.ImageField('Icone', max_length=12, choices=ICONE_CHOICES)
+    icone = models.CharField('Icone', max_length=12, choices=ICONE_CHOICES)
 
     class Meta:
         verbose_name = 'Trab'
@@ -85,8 +85,8 @@ class RecursoDireita(Base):
 
     recurso_direita = models.CharField('Recurso Direita', max_length=100)
     descricao = models.TextField('Descriçao', max_length=200)
-    icone = models.ImageField('Icone', max_length=16, choices=ICONE_CHOICES)
-    delay = models.ImageField('Delay', max_length=4, choices=DELAY_CHOICES)
+    icone = models.CharField('Icone', max_length=16, choices=ICONE_CHOICES)
+    delay = models.CharField('Delay', max_length=4, choices=DELAY_CHOICES)
 
     class Meta:
         verbose_name = 'recurso_direita'
@@ -112,8 +112,8 @@ class RecursoEsquerda(Base):
 
     recurso_esquerda = models.CharField('Recurso Esquerda', max_length=100)
     descricao = models.TextField('Descriçao', max_length=200)
-    icone = models.ImageField('Icone', max_length=16, choices=ICONE_CHOICES)
-    delay = models.ImageField('Delay', max_length=4, choices=DELAY_CHOICES)
+    icone = models.CharField('Icone', max_length=16, choices=ICONE_CHOICES)
+    delay = models.CharField('Delay', max_length=4, choices=DELAY_CHOICES)
 
     class Meta:
         verbose_name = 'recurso_esquerda'
@@ -132,7 +132,7 @@ class Precos(Base):
 
     preco = models.DecimalField('Valor', max_digits=10, decimal_places=2)
     nome = models.CharField('Titulo', max_length=100)
-    icone = models.ImageField('Icone', max_length=11, choices=ICONE_CHOICES)
+    icone = models.CharField('Icone', max_length=11, choices=ICONE_CHOICES)
     description_1 = models.CharField('Descriçao 1', max_length=100)
     description_2 = models.CharField('Descriçao 2', max_length=100)
     description_3 = models.CharField('Descriçao 3', max_length=100)
