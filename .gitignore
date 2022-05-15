@@ -6,3 +6,4 @@ __pycash__/
 .env
 template/*
 htmlcove/*
+.DS_Store
