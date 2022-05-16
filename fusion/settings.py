@@ -79,18 +79,17 @@ WSGI_APPLICATION = 'fusion.wsgi.application'
 
 # Database
 # https://docs.djangoproject.com/en/4.0/ref/settings/#databases
-"""
+
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql',
-        'NAME': 'BD',
+        'NAME': 'Name',
         'USER': 'User',
         'PASSWORD': 'Password',
-        'HOST': 'host',
-        'PORT': 'port',
+        'HOST': '127.0.0.1',
+        'PORT': '5432',
     }
 }
-"""
 
 # Password validation
 # https://docs.djangoproject.com/en/4.0/ref/settings/#auth-password-validators
@@ -131,6 +130,7 @@ STATIC_ROOT = 'staticfiles'
 
 # My config
 MEDIA_URL = 'media/'
+MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
 
 # Default primary key field type
 # https://docs.djangoproject.com/en/4.0/ref/settings/#default-auto-field
