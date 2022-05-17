@@ -162,7 +162,7 @@ if cwd == '/app' or cwd[:4] == '/tmp':
 
     # Only allow heroku to host the project.
 
-    ALLOWED_HOSTS = ['fusion-cobra.herokuapp.com']
+    ALLOWED_HOSTS = ['cobra-fusion.herokuapp.com']
     DEBUG = False
 
     # Static asset configuration
